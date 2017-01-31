@@ -14,7 +14,7 @@
     } else {
         $count = 100;
     }
-    $url = $catalogRoute . "/loadTest?count=" . $count;
+    $url = "https://catalog-madriddemo.mybluemix.net/loadTest?count=" . $count;
 
     $curl = curl_init();
     curl_setopt($curl, CURLOPT_URL, $url);

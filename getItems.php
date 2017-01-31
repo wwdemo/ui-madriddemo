@@ -16,7 +16,7 @@ function RetrieveItems()
     //echo "\r\ncatalogHost:" . $catalogHost;    
     $catalogRoute = "http://localhost:6379/catalog";
     //echo "\r\ncatalogRoute:" . $catalogRoute;    
-    $url = "http://localhost:6379/catalog/items";
+    $url = "https://catalog-madriddemo.mybluemix.net/items";
 
     $curl = curl_init();
     curl_setopt($curl, CURLOPT_URL, $url);

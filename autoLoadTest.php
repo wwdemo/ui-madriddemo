@@ -46,7 +46,7 @@
 		$catalogAppName = str_replace("ui-", "catalog-api-", $applicationName);
 		$catalogAppName = str_replace("-ui", "-catalog-api", $catalogAppName);
 		$catalogHost=substr_replace($applicationURI, $catalogAppName, 0, strlen($applicationName));
-		$catalogRoute = "http://localhost:6379/catalog";
+		$catalogRoute = "https://catalog-madriddemo.mybluemix.net";
 
 		//Specify count in loadTest URL
 		if (isset($_GET['count'])) {
